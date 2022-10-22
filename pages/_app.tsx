@@ -1,8 +1,46 @@
-import '../styles/globals.css'
+import * as React from 'react'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { extendTheme, ChakraProvider } from '@chakra-ui/react'
+import { DefaultSeo } from 'next-seo'
+import SEO from '../next-seo.config'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const theme = extendTheme({
+  styles: {
+    global: {
+      'body, html': {
+        padding: 0,
+        margin: 0,
+        height: '100%',
+      },
+      body: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }
+    },
+  },
+})
+
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <title>Kevlar - Make Your Wallet Trustless</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="description" content="Kevlar makes Metamask, or any RPC-based wallet, completely trustless." />
+      </Head>
+      <DefaultSeo {...SEO} />
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
+  )
 }
 
-export default MyApp
+export default App
