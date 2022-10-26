@@ -3,15 +3,20 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 import { DefaultSeo } from 'next-seo'
+import '@fontsource/red-hat-mono/400.css'
+import '@fontsource/red-hat-mono/700.css'
 import SEO from '../next-seo.config'
 
 const theme = extendTheme({
+  fonts: {
+    heading: '"Red Hat Mono", monospace',
+    body: '"Red Hat Mono", monospace',
+  },
   styles: {
     global: {
       'body, html': {
         padding: 0,
         margin: 0,
-        height: '100%',
       },
       body: {
         display: 'flex',
@@ -28,7 +33,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>Kevlar - Make Your Wallet Trustless</title>
+        <title>kevlar - Turn Your Wallet Trustless</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"

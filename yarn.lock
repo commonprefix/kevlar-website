@@ -957,6 +957,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/red-hat-mono@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/red-hat-mono/-/red-hat-mono-4.5.11.tgz#80f3ece28c4c3e98a2446f4e8838a52e4234ff7d"
+  integrity sha512-PnrKPcUMAmICLjxJ2MSMFCDX+dCxUgh2znWfJxXbjiDbnoVwZSWGjyrmL8yEnmZ0YHKuR8HpiFdshuhTlMqv3g==
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.6"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.6.tgz#6a51d603a3aaf8d4cf45b42b3f2ac9318a4adc4b"
