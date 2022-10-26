@@ -140,7 +140,7 @@ const InstructionsContainer = () => {
             <TabPanels>
               <TabPanel>
                 <CodeSnippet>
-                  kevlar -n 1
+                  kevlar
                 </CodeSnippet>
               </TabPanel>
               <TabPanel>
