@@ -33,7 +33,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>kevlar - Turn Your Wallet Trustless</title>
+        <title>kevlar - Make Your Wallet Trustless</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
