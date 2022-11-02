@@ -1,32 +1,12 @@
 import * as React from 'react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { extendTheme, ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import { DefaultSeo } from 'next-seo'
+import SEO from '../next-seo.config'
+import theme from '../theme'
 import '@fontsource/red-hat-mono/400.css'
 import '@fontsource/red-hat-mono/700.css'
-import SEO from '../next-seo.config'
-
-const theme = extendTheme({
-  fonts: {
-    heading: '"Red Hat Mono", monospace',
-    body: '"Red Hat Mono", monospace',
-  },
-  styles: {
-    global: {
-      'body, html': {
-        padding: 0,
-        margin: 0,
-      },
-      body: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }
-    },
-  },
-})
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
