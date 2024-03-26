@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, UnorderedList, ListItem, Link } from '@chakra-ui/react'
+import { Container, UnorderedList, ListItem, Link, Text } from '@chakra-ui/react'
 
 type FooterLink = {
   text: string
@@ -28,6 +28,7 @@ const FooterContainer = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
+      flexDirection="column"
     >
       <UnorderedList
         p={0}
@@ -47,6 +48,11 @@ const FooterContainer = () => {
           )
         })}
       </UnorderedList>
+      <Text fontSize="sm" mt={5}>
+        By <Link isExternal color="gray" href="https://commonprefix.com">
+          Common Prefix
+        </Link>
+      </Text>
     </Container>
   )
 }
