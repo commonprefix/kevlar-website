@@ -48,8 +48,8 @@ const FooterContainer = () => {
           )
         })}
       </UnorderedList>
-      <Text fontSize="sm" fontStyle="italic" mt={5}>
-        Backed by <Link isExternal color="gray" href="https://commonprefix.com">
+      <Text fontSize="sm" mt={5}>
+        By <Link isExternal color="gray" href="https://commonprefix.com">
           Common Prefix
         </Link>
       </Text>
