@@ -41,7 +41,7 @@ const InstructionsContainer = () => {
           <Tabs onChange={(index: number) => setChainIdTabIndex(index as 0 | 1)}>
             <TabList>
               <Tab>mainnet</Tab>
-              <Tab>goerli</Tab>
+              <Tab>sepolia</Tab>
             </TabList>
             <TabPanels>
               <TabPanel>
@@ -51,7 +51,7 @@ const InstructionsContainer = () => {
               </TabPanel>
               <TabPanel>
                 <CodeSnippet>
-                  kevlar -n 5
+                  kevlar -n 11155111
                 </CodeSnippet>
               </TabPanel>
             </TabPanels>
@@ -67,7 +67,7 @@ const InstructionsContainer = () => {
                 <>
                   <Text as="span" fontStyle="italic">Chain ID</Text>:
                   <CodeSnippet mx={1} p={2}>
-                    {chainIdTabIndex === 0 ? 1 : 5}
+                    {chainIdTabIndex === 0 ? 1 : 11155111}
                   </CodeSnippet>
                 </>,
                 <>
